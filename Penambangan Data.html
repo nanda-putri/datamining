@@ -356,6 +356,13 @@ title="Print to PDF"
    </strong>
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#k-means-clustering">
+   <strong>
+    K-Means Clustering
+   </strong>
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -403,6 +410,13 @@ title="Print to PDF"
    </strong>
   </a>
  </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#k-means-clustering">
+   <strong>
+    K-Means Clustering
+   </strong>
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -420,7 +434,7 @@ title="Print to PDF"
 <h1><strong>Statistik Deskriptif</strong><a class="headerlink" href="#statistik-deskriptif" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pan</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 </div>
 </div>
@@ -435,14 +449,14 @@ title="Print to PDF"
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/nanda-putri/tugaspaw/master/healthcare-dataset-stroke-data.csv&quot;</span>
-<span class="n">c</span> <span class="o">=</span> <span class="n">pan</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 <span class="n">c</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-9693341e-a5d9-4713-a87c-dd767e9401fa">
+  <div id="df-79f74bd7-920a-495c-b69e-c1ff79689039">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -555,7 +569,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-9693341e-a5d9-4713-a87c-dd767e9401fa')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-79f74bd7-920a-495c-b69e-c1ff79689039')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -606,12 +620,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-9693341e-a5d9-4713-a87c-dd767e9401fa button.colab-df-convert');
+          document.querySelector('#df-79f74bd7-920a-495c-b69e-c1ff79689039 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-9693341e-a5d9-4713-a87c-dd767e9401fa');
+          const element = document.querySelector('#df-79f74bd7-920a-495c-b69e-c1ff79689039');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -804,7 +818,7 @@ Data Genap
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">pyplot</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 </pre></div>
 </div>
@@ -819,11 +833,15 @@ Data Genap
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
-  warnings.warn(msg, FutureWarning)
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">NameError</span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">13</span><span class="o">-</span><span class="n">c9746866fe0f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">pyplot</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">Age</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">pyplot</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="ne">NameError</span>: name &#39;pyplot&#39; is not defined
 </pre></div>
 </div>
-<img alt="_images/Penambangan Data_19_1.png" src="_images/Penambangan Data_19_1.png" />
 </div>
 </div>
 </section>
@@ -846,7 +864,7 @@ Data Genap
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2dec5c17-f56c-4009-9ff2-e5f87ecb69d9">
+  <div id="df-be38338e-d824-4848-a282-100925a007fd">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -966,7 +984,7 @@ Data Genap
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2dec5c17-f56c-4009-9ff2-e5f87ecb69d9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-be38338e-d824-4848-a282-100925a007fd')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1017,12 +1035,12 @@ Data Genap
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2dec5c17-f56c-4009-9ff2-e5f87ecb69d9 button.colab-df-convert');
+          document.querySelector('#df-be38338e-d824-4848-a282-100925a007fd button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2dec5c17-f56c-4009-9ff2-e5f87ecb69d9');
+          const element = document.querySelector('#df-be38338e-d824-4848-a282-100925a007fd');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1131,34 +1149,8 @@ interval petal.width =  [[0.9, 1.7], [0.0976, 0.9], [1.7, 2.5]]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  &quot;&quot;&quot;Entry point for launching an IPython kernel.
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:3: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  This is separate from the ipykernel package so we can avoid doing imports until
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:4: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  after removing the cwd from sys.path.
-</pre></div>
-</div>
 <div class="output text_html">
-  <div id="df-cbfd27aa-d83a-4209-b7da-bb6b8fbff3dd">
+  <div id="df-32d9c726-547a-4384-a5af-3ed751ecf3b1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1242,7 +1234,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-cbfd27aa-d83a-4209-b7da-bb6b8fbff3dd')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-32d9c726-547a-4384-a5af-3ed751ecf3b1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1293,12 +1285,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-cbfd27aa-d83a-4209-b7da-bb6b8fbff3dd button.colab-df-convert');
+          document.querySelector('#df-32d9c726-547a-4384-a5af-3ed751ecf3b1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-cbfd27aa-d83a-4209-b7da-bb6b8fbff3dd');
+          const element = document.querySelector('#df-32d9c726-547a-4384-a5af-3ed751ecf3b1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1318,7 +1310,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-5d3b8e3f-04c9-47c3-be33-cc5adb9dbd11">
+  <div id="df-08642f92-c102-4276-9ce7-6f9f1cd1c839">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1402,7 +1394,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-5d3b8e3f-04c9-47c3-be33-cc5adb9dbd11')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-08642f92-c102-4276-9ce7-6f9f1cd1c839')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1453,12 +1445,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-5d3b8e3f-04c9-47c3-be33-cc5adb9dbd11 button.colab-df-convert');
+          document.querySelector('#df-08642f92-c102-4276-9ce7-6f9f1cd1c839 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-5d3b8e3f-04c9-47c3-be33-cc5adb9dbd11');
+          const element = document.querySelector('#df-08642f92-c102-4276-9ce7-6f9f1cd1c839');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1478,7 +1470,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-154bee12-5498-40d9-9279-1c2bb02ed832">
+  <div id="df-08690ac4-98eb-4099-8ac0-abd02b5bf302">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1562,7 +1554,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-154bee12-5498-40d9-9279-1c2bb02ed832')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-08690ac4-98eb-4099-8ac0-abd02b5bf302')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1613,12 +1605,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-154bee12-5498-40d9-9279-1c2bb02ed832 button.colab-df-convert');
+          document.querySelector('#df-08690ac4-98eb-4099-8ac0-abd02b5bf302 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-154bee12-5498-40d9-9279-1c2bb02ed832');
+          const element = document.querySelector('#df-08690ac4-98eb-4099-8ac0-abd02b5bf302');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1638,7 +1630,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-7d205792-fc8d-4c20-9796-acee28337e65">
+  <div id="df-702d2f08-a75f-4f83-bfa2-de67d2318187">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1722,7 +1714,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7d205792-fc8d-4c20-9796-acee28337e65')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-702d2f08-a75f-4f83-bfa2-de67d2318187')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1773,12 +1765,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7d205792-fc8d-4c20-9796-acee28337e65 button.colab-df-convert');
+          document.querySelector('#df-702d2f08-a75f-4f83-bfa2-de67d2318187 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7d205792-fc8d-4c20-9796-acee28337e65');
+          const element = document.querySelector('#df-702d2f08-a75f-4f83-bfa2-de67d2318187');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1857,34 +1849,8 @@ interval petal.width =  [[0.867, 1.6], [0.099, 0.867], [1.6, 2.5]]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  &quot;&quot;&quot;Entry point for launching an IPython kernel.
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:3: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  This is separate from the ipykernel package so we can avoid doing imports until
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:4: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  after removing the cwd from sys.path.
-</pre></div>
-</div>
 <div class="output text_html">
-  <div id="df-2bfdfbc1-d0a0-4361-b946-9b10d29dc3b7">
+  <div id="df-071a0e95-60b0-4617-92da-c96db63759bc">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1968,7 +1934,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2bfdfbc1-d0a0-4361-b946-9b10d29dc3b7')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-071a0e95-60b0-4617-92da-c96db63759bc')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2019,12 +1985,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2bfdfbc1-d0a0-4361-b946-9b10d29dc3b7 button.colab-df-convert');
+          document.querySelector('#df-071a0e95-60b0-4617-92da-c96db63759bc button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2bfdfbc1-d0a0-4361-b946-9b10d29dc3b7');
+          const element = document.querySelector('#df-071a0e95-60b0-4617-92da-c96db63759bc');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2044,7 +2010,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-7e6fe05e-5f47-4eb6-b2b3-2e07a6a9b005">
+  <div id="df-6c8ac657-7a22-4fe3-a486-0a7f28694591">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2128,7 +2094,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7e6fe05e-5f47-4eb6-b2b3-2e07a6a9b005')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-6c8ac657-7a22-4fe3-a486-0a7f28694591')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2179,12 +2145,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7e6fe05e-5f47-4eb6-b2b3-2e07a6a9b005 button.colab-df-convert');
+          document.querySelector('#df-6c8ac657-7a22-4fe3-a486-0a7f28694591 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7e6fe05e-5f47-4eb6-b2b3-2e07a6a9b005');
+          const element = document.querySelector('#df-6c8ac657-7a22-4fe3-a486-0a7f28694591');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2204,7 +2170,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-f833aad8-27f9-4677-98e3-72661662f5a5">
+  <div id="df-f3d99ac2-690c-47f1-9dc0-d1e65ac1642c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2288,7 +2254,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-f833aad8-27f9-4677-98e3-72661662f5a5')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f3d99ac2-690c-47f1-9dc0-d1e65ac1642c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2339,12 +2305,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-f833aad8-27f9-4677-98e3-72661662f5a5 button.colab-df-convert');
+          document.querySelector('#df-f3d99ac2-690c-47f1-9dc0-d1e65ac1642c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-f833aad8-27f9-4677-98e3-72661662f5a5');
+          const element = document.querySelector('#df-f3d99ac2-690c-47f1-9dc0-d1e65ac1642c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2364,7 +2330,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     </div>
   </div>
 </div><div class="output text_html">
-  <div id="df-83e8a212-6db1-40ca-9715-9d049dddc10c">
+  <div id="df-c64e3190-a33f-42b4-b603-054007fd9f69">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2448,7 +2414,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-83e8a212-6db1-40ca-9715-9d049dddc10c')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c64e3190-a33f-42b4-b603-054007fd9f69')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2499,12 +2465,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-83e8a212-6db1-40ca-9715-9d049dddc10c button.colab-df-convert');
+          document.querySelector('#df-c64e3190-a33f-42b4-b603-054007fd9f69 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-83e8a212-6db1-40ca-9715-9d049dddc10c');
+          const element = document.querySelector('#df-c64e3190-a33f-42b4-b603-054007fd9f69');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2534,7 +2500,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-81a9468c-d360-41ba-8ffb-958b45510b91">
+  <div id="df-efd38be7-f981-4327-931c-01073040b7d6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2593,7 +2559,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-81a9468c-d360-41ba-8ffb-958b45510b91')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-efd38be7-f981-4327-931c-01073040b7d6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2644,12 +2610,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-81a9468c-d360-41ba-8ffb-958b45510b91 button.colab-df-convert');
+          document.querySelector('#df-efd38be7-f981-4327-931c-01073040b7d6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-81a9468c-d360-41ba-8ffb-958b45510b91');
+          const element = document.querySelector('#df-efd38be7-f981-4327-931c-01073040b7d6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -2679,16 +2645,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:2: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  
-</pre></div>
-</div>
 <div class="output text_html">
-  <div id="df-c59147a9-db98-4bc8-9b80-ed13f326a151">
+  <div id="df-3cd106d9-6f9f-4c5f-bfa1-775f0499a2e6">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -2772,7 +2730,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </table>
 <p>150 rows × 2 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-c59147a9-db98-4bc8-9b80-ed13f326a151')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3cd106d9-6f9f-4c5f-bfa1-775f0499a2e6')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -2823,12 +2781,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
       <script>
         const buttonEl =
-          document.querySelector('#df-c59147a9-db98-4bc8-9b80-ed13f326a151 button.colab-df-convert');
+          document.querySelector('#df-3cd106d9-6f9f-4c5f-bfa1-775f0499a2e6 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-c59147a9-db98-4bc8-9b80-ed13f326a151');
+          const element = document.querySelector('#df-3cd106d9-6f9f-4c5f-bfa1-775f0499a2e6');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -3375,6 +3333,9 @@ setosa
 </div>
 </div>
 </div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="k-means-clustering">
+<h1><strong>K-Means Clustering</strong><a class="headerlink" href="#k-means-clustering" title="Permalink to this headline">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
