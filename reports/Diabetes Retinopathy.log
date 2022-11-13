@@ -17,16 +17,30 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-df.columns = [col_names]
-df
+training, test = train_test_split(scaled, train_size = 0.8, test_size = 0.2, shuffle=False)
+training_label, test_label = train_test_split(yBaru, train_size = 0.8, test_size = 0.2, shuffle=False)
+
+clf2 = GaussianNB()
+clf2.fit(training, training_label)
+
+probas = clf2.predict_proba(test)
+probas = probas[:,1]
+probas.shape
+
+probas
+
+test_label
 ------------------
 
 [0;31m[0m
 [0;31mNameError[0mTraceback (most recent call last)
-[0;32m<ipython-input-11-f826e0820fd6>[0m in [0;36m<module>[0;34m[0m
-[0;32m----> 1[0;31m [0mdf[0m[0;34m.[0m[0mcolumns[0m [0;34m=[0m [0;34m[[0m[0mcol_names[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
-[0m[1;32m      2[0m [0mdf[0m[0;34m[0m[0;34m[0m[0m
+[0;32m<ipython-input-51-268cfe785842>[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0mtraining[0m[0;34m,[0m [0mtest[0m [0;34m=[0m [0mtrain_test_split[0m[0;34m([0m[0mscaled[0m[0;34m,[0m [0mtrain_size[0m [0;34m=[0m [0;36m0.8[0m[0;34m,[0m [0mtest_size[0m [0;34m=[0m [0;36m0.2[0m[0;34m,[0m [0mshuffle[0m[0;34m=[0m[0;32mFalse[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0mtraining_label[0m[0;34m,[0m [0mtest_label[0m [0;34m=[0m [0mtrain_test_split[0m[0;34m([0m[0myBaru[0m[0;34m,[0m [0mtrain_size[0m [0;34m=[0m [0;36m0.8[0m[0;34m,[0m [0mtest_size[0m [0;34m=[0m [0;36m0.2[0m[0;34m,[0m [0mshuffle[0m[0;34m=[0m[0;32mFalse[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      3[0m [0;34m[0m[0m
+[1;32m      4[0m [0mclf2[0m [0;34m=[0m [0mGaussianNB[0m[0;34m([0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0mclf2[0m[0;34m.[0m[0mfit[0m[0;34m([0m[0mtraining[0m[0;34m,[0m [0mtraining_label[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 
-[0;31mNameError[0m: name 'col_names' is not defined
-NameError: name 'col_names' is not defined
+[0;31mNameError[0m: name 'yBaru' is not defined
+NameError: name 'yBaru' is not defined
 
